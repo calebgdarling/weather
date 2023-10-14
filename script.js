@@ -12,7 +12,7 @@ const unit = "imperial";
 
 // Fetch Weather Data
 const fetchWeather = async () => {
-   const geocodingURL = `http://api.openweathermap.org/geo/1.0/direct?q=${city.value},${country}&limit=${limit}&appid=${apiKey}`;
+   const geocodingURL = `https://api.openweathermap.org/geo/1.0/direct?q=${city.value},${country}&limit=${limit}&appid=${apiKey}`;
 
    if (!city.value) {
     alert('Please enter a valid city name.');
